@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">layout</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Submit">Submit</string>
+	<string name="Clear">Clear</string>
+	<string name="Enter Username">Enter Username</string>
+</resources>

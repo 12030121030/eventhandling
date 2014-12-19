@@ -1,0 +1,26 @@
+package com.example.login;
+
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	private Button btnClick;
+	private float no=(float) 20.5;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        btnClick = (Button) findViewById(R.id.btnClick);
+        btnClick.setText("PROCEED");
+        btnClick.setTextColor(Color.RED);
+        btnClick.setTextSize((float)20.5);
+        btnClick.setBackgroundColor(Color.CYAN);
+        
+    }
+    
+}

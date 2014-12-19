@@ -1,0 +1,44 @@
+package com.example.upperlowercase;
+
+import com.example.eventhandling.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	private Button clicklower;
+	private Button clickupper;
+    private EditText name;
+    private TextView changecase;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        clicklower = (Button) findViewById(R.id.button1);
+        clickupper = (Button) findViewById(R.id.button2);
+	    name = (EditText) findViewById(R.id.editText1);
+	    changecase = (TextView) findViewById(R.id.editText1);
+	    OnClickListener listener = new OnClickListener(){
+            
+        	public void onClick(View v) {
+Toast.makeText(getApplicationContext(), name.getText(), Toast.LENGTH_LONG).show();
+
+        	}
+        };
+        
+         click.setOnClickListener(listener);
+
+	       
+    }
+
+
+    }
+    

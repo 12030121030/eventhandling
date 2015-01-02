@@ -1,0 +1,22 @@
+package com.example.textformatter;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+OnCheckedChangeListner chkBoxListner = new android.widget.CompoundButton.OnCheckedChangeListner()
+{
+	@Override
+	public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
+		
+	}
+};
+}
+}

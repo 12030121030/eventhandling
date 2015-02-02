@@ -1,0 +1,28 @@
+package com.example.intent;
+
+import android.net.Uri;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.activity_check_box);
+	btnClick = (Button) findViewById(R.id.btnClick);
+	@Override
+	public boolean onClick(View arg0) {
+		
+		
+		/************* Implicit Intent*********************/
+		Intent intentObj = new Intent(Intent.ACTION_VIEW,
+				Uri.parse("http://www.google.com"));
+		startActivity(intentObj);
+	}
+
+}

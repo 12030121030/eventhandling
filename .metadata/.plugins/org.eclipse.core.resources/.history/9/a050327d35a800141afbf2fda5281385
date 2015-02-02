@@ -1,0 +1,13 @@
+package com.example.intent;
+
+import android.os.Bundle;
+
+public class second_activity extends activity_main {
+	
+	@Override
+	protected void onCreate(Bundle savedIntanceStates) {
+	super.onCreate(savedIntanceStates);
+	setContentView(R.layout.second_activity);
+	
+	String username = getIntent().getExtras
+	}

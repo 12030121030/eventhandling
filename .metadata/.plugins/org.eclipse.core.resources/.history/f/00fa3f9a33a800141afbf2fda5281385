@@ -1,0 +1,40 @@
+package com.example.intent;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+	private Button B1;
+	private Button B2;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedIntanceStates) {
+	super.onCreate(savedIntanceStates);
+	setContentView(R.layout.activity_main);
+	
+	B1= (Button) findViewById(R.id.Button1);
+	B2 = (Button) findViewById(R.id.Button2);
+	
+	@Override
+	public void onClick(View arg0) {
+		
+		
+		/************* Implicit Intent*********************/
+		Intent intentObj = new Intent(Intent.ACTION_VIEW,
+				Uri.parse("http://www.google.com"));
+		startActivity(intentObj);
+		
+		@Override
+		public void onClick(View arg0) {
+			OnClickListner listner = new OnClickListner() {
+				
+		/************* Explicit Intent*********************/	
+		Intent intent = new Intent(getApplicationContext), CaseConvertActivity.class);
+		CaseConverterActivity.class);
+		startActivity(intent);
+	}
+
+}

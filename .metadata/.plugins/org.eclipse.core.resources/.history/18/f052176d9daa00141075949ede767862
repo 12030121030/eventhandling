@@ -1,0 +1,34 @@
+package com.example.login_feedback;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RatingBar;
+
+public class Detail_Activity extends Activity {
+	private EditText name1;
+	private EditText age1;
+	private EditText contact1;
+	private RatingBar ratingBar;
+	private CheckBox feedback1;
+	private Button send1;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_detail_);
+	}
+	name1 = (EditText) findViewById(R.id.name);
+	age1= (EditText) findViewById(R.id.age);
+	contact1 = (EditText) findViewById(R.id.contact);
+	ratingBar = (RatingBar) findViewById(R.id.ratingBar1);
+	feedback1 = (CheckBox) findViewById(R.id.feedback);
+	send1 = (Button) findViewById(R.id.send);
+	
+    logon = (Button) findViewById(R.id.button1);
+	
+	}
+
+}

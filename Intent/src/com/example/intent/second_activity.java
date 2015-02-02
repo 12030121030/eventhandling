@@ -1,0 +1,16 @@
+package com.example.intent;
+
+import android.os.Bundle;
+
+public class second_activity extends MainActivity {
+	
+	@Override
+	protected void onCreate(Bundle savedIntanceStates) {
+	super.onCreate(savedIntanceStates);
+	setContentView(R.layout.activity_main);
+	
+	String username = getIntent().getExtras().getString("username");
+	int no1 = getIntent().getExtras().getInt("number");
+	Boolean booleanValue = getIntent().getExtras().getBoolean("boolean");
+	}
+}
